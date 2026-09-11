@@ -2,41 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión - Mis Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - AppHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
+    <!-- Encabezado Innovador -->
+    <header class="encabezado">
+        <div class="logo">🚀 Mis<span style="color: #00d2d3;">Apps</span></div>
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de</a>
+            <a href="iniciosesion.html" class="activo btn-destacado-nav">Iniciar Sesión</a>
+        </nav>
+    </header>
 
-<body style="background-color: rgb(201, 187, 187); margin: 0; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
-
-
-
-    <div style="position: absolute; top: 15px; left: 20px; background-color: #2c3e50; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 22px; box-shadow: 2px 2px 8px rgba(0,0,0,0.4);">
-        🚀 Mis<span style="color: #00d2d3;">Apps</span>
-    </div>
-
-
-    <div style="background-color: white; padding: 30px; border-radius: 10px; width: 100%; max-width: 320px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <!-- Formulario de Inicio de Sesión Integrado -->
+    <main class="contenedor-pagina-simple" style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
         
-        <h2 style="text-align: center; color: #2c3e50; margin-top: 0;">Iniciar Sesión</h2>
+        <div class="tarjeta-glass" style="width: 100%; max-width: 380px; padding: 35px;">
+            <h2 class="titulo-gradiente" style="text-align: center; font-size: 28px; margin-bottom: 25px;">Bienvenido</h2>
 
-        <form action="index.html" method="GET">
-            <p style="margin: 0 0 5px 0; font-size: 14px;"><b>Correo:</b></p>
-            <input type="email" placeholder="usuario@ejemplo.com" required style="width: 100%; padding: 10px; margin-bottom: 15px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px;">
+            <form action="index.html" method="GET" style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <div>
+                    <label style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Correo electrónico</label>
+                    <input type="email" placeholder="usuario@ejemplo.com" required style="width: 100%; padding: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 8px; color: white; outline: none;">
+                </div>
 
-            <p style="margin: 0 0 5px 0; font-size: 14px;"><b>Contraseña:</b></p>
-            <input type="password" placeholder="********" required style="width: 100%; padding: 10px; margin-bottom: 20px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px;">
+                <div>
+                    <label style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Contraseña</label>
+                    <input type="password" placeholder="********" required style="width: 100%; padding: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 8px; color: white; outline: none;">
+                </div>
 
-            <button <a href="index.html" type="submit" style="width: 100%; padding: 10px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Ingresar</button>
-            
-        </form>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px;">
+                    <label style="color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                        <input type="checkbox" style="accent-color: var(--accent-color);"> Recordarme
+                    </label>
+                    <a href="#" style="color: var(--accent-color); text-decoration: none;">¿Olvidaste tu contraseña?</a>
+                </div>
 
-        <p style="text-align: center; font-size: 13px; margin-top: 15px; margin-bottom: 0;">
-            ¿No tienes cuenta? <a href="registro.html" style="color: #00d2d3; font-weight: bold; text-decoration: none;">Regístrate</a>
-        </p>
+                <button type="submit" class="btn-principal" style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Ingresar</button>
+            </form>
 
-    </div>
-    
-    
-  
+            <p style="text-align: center; font-size: 14px; color: var(--text-secondary); margin-top: 20px;">
+                ¿Aún no tienes cuenta? <a href="registro.html" style="color: var(--accent-color); font-weight: bold; text-decoration: none;">Regístrate aquí</a>
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Pie de Página Completo -->
+    <footer class="pie-pagina-innovador">
+        <div class="contenido-pie">
+            <p class="copyright" style="text-align: center;">© 2026 MisApps | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
