@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - AppHub</title>
+    <title>Iniciar Sesión - AppHub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Encabezado Innovador -->
     <header class="encabezado">
-        <div class="logo">🚀 Mis<span style="color: #00d2d3;">Apps</span></div>
+        <div class="logo">📱 Mis<span style="color: #00d2d3;">Apps</span></div>
         <nav class="navegacion">
             <a href="index.html">Inicio</a>
             <a href="acerca.html">Acerca de</a>
-            <a href="registro.html" class="activo btn-destacado-nav">Registro</a>
+            <a href="iniciosesion.html" class="activo btn-destacado-nav">Iniciar Sesión</a>
         </nav>
     </header>
 
-    <!-- Formulario de Registro Integrado -->
+    <!-- Formulario de Inicio de Sesión Integrado -->
     <main class="contenedor-pagina-simple" style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
         
         <div class="tarjeta-glass" style="width: 100%; max-width: 380px; padding: 35px;">
-            <h2 class="titulo-gradiente" style="text-align: center; font-size: 28px; margin-bottom: 25px;">Crear Cuenta</h2>
+            <h2 class="titulo-gradiente" style="text-align: center; font-size: 28px; margin-bottom: 25px;">Bienvenido</h2>
 
-            <form action="iniciosesion.html" method="GET" style="display: flex; flex-direction: column; gap: 15px;">
+            <form action="index.html" method="GET" style="display: flex; flex-direction: column; gap: 15px;">
                 
                 <div>
                     <label style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Correo electrónico</label>
@@ -36,21 +36,18 @@
                     <input type="password" placeholder="********" required style="width: 100%; padding: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 8px; color: white; outline: none;">
                 </div>
 
-                <div>
-                    <label style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Número telefónico</label>
-                    <input type="tel" placeholder="301 123 4567" required style="width: 100%; padding: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 8px; color: white; outline: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px;">
+                    <label style="color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                        <input type="checkbox" style="accent-color: var(--accent-color);"> Recordarme
+                    </label>
+                    <a href="#" style="color: var(--accent-color); text-decoration: none;">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <div>
-                    <label style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Edad</label>
-                    <input type="number" min="1" max="120" placeholder="22" required style="width: 100%; padding: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-color); border-radius: 8px; color: white; outline: none;">
-                </div>
-
-                <button type="submit" class="btn-principal" style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Registrarse</button>
+                <button type="submit" class="btn-principal" style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Ingresar</button>
             </form>
 
             <p style="text-align: center; font-size: 14px; color: var(--text-secondary); margin-top: 20px;">
-                ¿Ya tienes cuenta? <a href="iniciosesion.html" style="color: var(--accent-color); font-weight: bold; text-decoration: none;">Inicia sesión</a>
+                ¿Aún no tienes cuenta? <a href="registro.html" style="color: var(--accent-color); font-weight: bold; text-decoration: none;">Regístrate aquí</a>
             </p>
         </div>
 
