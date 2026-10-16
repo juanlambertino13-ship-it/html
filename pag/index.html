@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps - Plataforma de Aplicaciones</title>
+    
+    <!-- Enlace al CSS de Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Enlace a tu CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Encabezado / Navegación -->
     <header class="encabezado">
         <div class="logo">📱 Mis<span style="color: #00d2d3;">Apps</span></div>
         <nav class="navegacion">
@@ -18,148 +24,192 @@
         </nav>
     </header>
 
+    <!-- Sección de Bienvenida (Hero) -->
     <section class="hero-section">
         <h1 class="titulo-gradiente">Aplicaciones</h1>
         <p>Explora y conoce sobre aplicaciones que utilizas diariamente.</p>
     </section>
 
-    <main class="contenedor-principal" id="categorias">
+    <!-- Contenedor Principal Adaptable con Bootstrap Grid -->
+    <main class="container my-5" id="categorias">
 
-        <!-- Sección Estudio y Productividad -->
-        <section class="bloque-categoria">
-            <div class="encabezado-categoria">
-                <span class="badge-icono">📚</span>
-                <h2>Estudio y Productividad</h2>
+        <!-- Sección 1: Estudio y Productividad -->
+        <section class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+                <span class="badge-icono fs-3">📚</span>
+                <h2 class="m-0 text-white">Estudio y Productividad</h2>
             </div>
             
-            
-            <div class="grid-tarjetas">
-                <a href="apps/gemini.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/gemini.jpg" alt="Gemini"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Gemini</h3>
-                        <p>Asistente multimodal de IA desarrollado por Google.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-
-                <a href="apps/chatgpt.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/chatgpt.png" alt="ChatGPT"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>ChatGPT</h3>
-                        <p>Modelo lingüístico avanzado para redacción y consultas.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-
-                <a href="apps/classroom.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/classroom.jpg" alt="Google Classroom"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Google Classroom</h3>
-                        <p>Plataforma educativa para gestión de clases y tareas.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-
-                <a href="apps/docs.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/documentos.png" alt="Documentos de Google"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Documentos de Google</h3>
-                        <p>Procesador de texto en la nube para trabajo colaborativo.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-                 </a>
-                 <a href="apps/canva.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Canva.jfif" alt="Canva"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Canva</h3>
-                        <p>Plataforma para la creación de diseños gráficos de manera sencilla y colaborativa.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-                <a href="apps/capcut.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Capcut.png" alt="Capcut"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Capcut</h3>
-                        <p>Aplicación de edición de video para crear contenido visualmente atractivo.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+            <!-- Grilla responsive de Bootstrap (col-12 en celular, col-md-6 en tablet, col-lg-4 en computador) -->
+            <div class="row g-4">
                 
+                <!-- Tarjeta: Gemini -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/gemini.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/gemini.jpg" alt="Gemini"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Gemini</h3>
+                            <p>Asistente multimodal de IA desarrollado por Google.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: ChatGPT -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/chatgpt.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/chatgpt.png" alt="ChatGPT"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>ChatGPT</h3>
+                            <p>Modelo lingüístico avanzado para redacción y consultas.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: Google Classroom -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/classroom.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/classroom.jpg" alt="Google Classroom"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Google Classroom</h3>
+                            <p>Plataforma educativa para gestión de clases y tareas.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: Documentos de Google -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/docs.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/documentos.png" alt="Documentos de Google"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Documentos de Google</h3>
+                            <p>Procesador de texto en la nube para trabajo colaborativo.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: Canva -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/canva.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Canva.jfif" alt="Canva"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Canva</h3>
+                            <p>Plataforma para la creación de diseños gráficos de manera sencilla y colaborativa.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: CapCut -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/capcut.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Capcut.png" alt="Capcut"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Capcut</h3>
+                            <p>Aplicación de edición de video para crear contenido visualmente atractivo.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
 
             </div>
         </section>
 
-        <!-- Sección Comunicación y Redes -->
-        <section class="bloque-categoria">
-            <div class="encabezado-categoria">
-                <span class="badge-icono">💬</span>
-                <h2>Comunicación y Redes</h2>
+        <!-- Sección 2: Comunicación y Redes -->
+        <section class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+                <span class="badge-icono fs-3">💬</span>
+                <h2 class="m-0 text-white">Comunicación y Redes</h2>
             </div>
             
-            <div class="grid-tarjetas">
-                <a href="apps/whatsapp.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/whatsapp.jpg" alt="WhatsApp"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>WhatsApp</h3>
-                        <p>Mensajería instantánea y cifrada de extremo a extremo.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+            <!-- Grilla responsive de Bootstrap -->
+            <div class="row g-4">
+                
+                <!-- Tarjeta: WhatsApp -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/whatsapp.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/whatsapp.jpg" alt="WhatsApp"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>WhatsApp</h3>
+                            <p>Mensajería instantánea y cifrada de extremo a extremo.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="apps/instagram.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Instagram.jfif" alt="Instagram"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Instagram</h3>
-                        <p>Red social orientada a compartir fotos, videos y reels.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+                <!-- Tarjeta: Instagram -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/instagram.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Instagram.jfif" alt="Instagram"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Instagram</h3>
+                            <p>Red social orientada a compartir fotos, videos y reels.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="apps/tiktok.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Tiktok.jfif" alt="TikTok"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>TikTok</h3>
-                        <p>Plataforma de entretenimiento con videos cortos e interactivos.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+                <!-- Tarjeta: TikTok -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/tiktok.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Tiktok.jfif" alt="TikTok"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>TikTok</h3>
+                            <p>Plataforma de entretenimiento con videos cortos e interactivos.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="apps/twitch.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/twitch.png" alt="Twitch"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Twitch</h3>
-                        <p>Plataforma líder para transmisiones en vivo y streaming.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+                <!-- Tarjeta: Twitch -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/twitch.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/twitch.png" alt="Twitch"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Twitch</h3>
+                            <p>Plataforma líder para transmisiones en vivo y streaming.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="apps/discord.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Discord.png" alt="Discord"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Discord</h3>
-                        <p>Plataforma de voz, video y chat organizada en servidores.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
-                 <a href="apps/netflix.html" class="tarjeta-glass">
-                    <div class="icono-app"><img src="img/Netflix.png" alt="Netflix"></div>
-                    <div class="contenido-tarjeta">
-                        <h3>Netflix</h3>
-                        <p>Plataforma de streaming para la visualización de contenido de entretenimiento.</p>
-                        <span class="link-innovador">Ver análisis completo →</span>
-                    </div>
-                </a>
+                <!-- Tarjeta: Discord -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/discord.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Discord.png" alt="Discord"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Discord</h3>
+                            <p>Plataforma de voz, video y chat organizada en servidores.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Tarjeta: Netflix -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="apps/netflix.html" class="tarjeta-glass d-block h-100 text-decoration-none">
+                        <div class="icono-app"><img src="img/Netflix.png" alt="Netflix"></div>
+                        <div class="contenido-tarjeta">
+                            <h3>Netflix</h3>
+                            <p>Plataforma de streaming para la visualización de contenido de entretenimiento.</p>
+                            <span class="link-innovador">Ver análisis completo →</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </section>
 
     </main>
 
+    <!-- Pie de Página -->
     <footer class="pie-pagina-innovador">
         <div class="contenido-pie">
             <div class="columna-pie">
-                <h3>📱Mis<span style="color: #00d2d3;">Apps</span></h3>
+                <h3>📱 Mis<span style="color: #00d2d3;">Apps</span></h3>
                 <p>Tus aplicaciones inteligentes. Diseñadas para simplificar el acceso y comprensión de varias herramientas.</p>  
             </div>
 
@@ -179,6 +229,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS de Bootstrap 5.3.3 (Incluye la gestión interactiva del framework) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
